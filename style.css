@@ -1,0 +1,92 @@
+body {
+  font-family: Poppins, sans-serif;
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(20, 20, 40, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.logo {
+  font-size: 2em;
+  color: #00e0ff;
+  text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+  animation: glowPulse 2s infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 10px #00e0ff; }
+  50% { text-shadow: 0 0 20px #00e0ff, 0 0 40px #00e0ff; }
+}
+
+input {
+  padding: 10px;
+  width: 320px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+}
+
+.glow-btn {
+  padding: 10px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff0055, #ff6600);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+  transition: all 0.3s ease;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 85, 1);
+  transform: scale(1.05);
+}
+
+#thumbnail {
+  width: 240px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00e0ff;
+}
+
+.progress-container {
+  margin-top: 20px;
+  width: 80%;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00ff99, #00ccff);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 15px #00ccff;
+}
+
+#progress-text {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #00ffcc;
+}
