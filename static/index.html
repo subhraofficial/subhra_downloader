@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subhra Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">✨ Subhra Downloader</h1>
+
+    <div class="input-box">
+      <input type="text" id="url" placeholder="Paste YouTube URL here">
+      <button class="glow-btn" onclick="fetchInfo()">Fetch Info</button>
+    </div>
+
+    <div id="videoInfo" class="hidden">
+      <img id="thumbnail" src="" alt="thumbnail">
+      <h2 id="title"></h2>
+
+      <select id="quality"></select>
+      <button id="downloadBtn" class="glow-btn" onclick="startDownload()">Download</button>
+      <div id="downloadLink" class="downloadLink hidden">
+       <a id="dl" href="#" target="_blank" class="dlBtn">Download file</a>
+      </div>
+      <div class="progress-container hidden">
+        <div id="progress-bar"></div>
+        <p id="progress-text">0%</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
